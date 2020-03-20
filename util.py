@@ -6,7 +6,7 @@ class Queue():
         self.queue.append(value)
 
     def dequeue(self):
-        if self.size > 0:
+        if self.size() > 0:
             return self.queue.pop(0)
         else:
             return None
@@ -23,7 +23,7 @@ class Stack():
         self.stack.append(value)
 
     def pop(self):
-        if self.size > 0:
+        if self.size() > 0:
             return self.stack.pop()
         else:
             return None
